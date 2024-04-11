@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/pokemon_image_view"
+        android:layout_width="377dp"
+        android:layout_height="243dp"
+        android:layout_below="@id/result_text_view"
+        android:layout_marginTop="21dp"
+        android:contentDescription="Imagem do Pokémon" />
+
+    <ImageView
+        android:id="@+id/shiny_image_view"
+        android:layout_width="386dp"
+        android:layout_height="250dp"
+        android:layout_below="@id/pokemon_image_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:contentDescription="Imagem do Pokémon Shiny" />
+
+
+    <EditText
+        android:id="@+id/search_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite o nome do Pokémon"
+        android:imeOptions="actionDone"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_edit_text"
+        android:layout_marginTop="8dp"
+        android:text="Pesquisar" />
+
+    <TextView
+        android:id="@+id/result_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_button"
+        android:layout_marginTop="22dp"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>
